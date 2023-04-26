@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-wrap {
+        flex-wrap: nowrap !important;
+    }
+
+    .form {
+        width: 60% !important;
+    }
+
+    .mt-100\% {
+        margin-top: 200% !important;
+    }
+
+    .center {
+        justify-content: center !important;
+    }
+}
