@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="download-removebg-preview.png" type="image/x-icon">
+    <title>myTicTacToe</title>
+
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width:500px) {
+            #InfoContainer {
+                margin: 2rem 0 !important;
+                flex-direction: row !important;
+            }
+
+            #excited-img {
+                margin-left: 2rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bg-gray-800 w-screen">
+            <div class="space-y-1 px-2 pb-3 pt-2 w-full flex items-start">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#"
+                    class="hover:bg-indigo-900 text-white block rounded-md px-4 py-2 text-xl font-ms font-sans w-44 outline-none"
+                    aria-current="page">myTicTacToe.com</a>
+            </div>
+        </nav>
+        <div class="container flex flex-wrap justify-evenly items-center my-10">
+            <div id="game_grid" class="grid grid-rows-3 grid-cols-3 ">
+                <div id="box-0"
+                    class="game-box border-2 border-l-0 border-t-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-1"
+                    class="game-box border-2 border-t-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-2"
+                    class="game-box border-2 border-r-0 border-t-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-3"
+                    class="game-box border-2 border-l-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-4"
+                    class="game-box border-2 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-5"
+                    class="game-box border-2 border-r-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-6"
+                    class="game-box border-2 border-l-0 border-b-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-7"
+                    class="game-box border-2 border-b-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+                <div id="box-8"
+                    class="game-box border-2 border-r-0 border-b-0 border-solid border-black p-2 px-4 hover:bg-gray-100 h-20 w-20 flex flex-wrap justify-center items-center">
+                    <span class="game-text font-bold text-2xl font-sans">
+
+                    </span>
+                </div>
+            </div>
+
+            <div id="InfoContainer" class="flex flex-wrap flex-col justify-center items-start self-start">
+                <h1 class="text-black text-3xl font-bold ">Welcome to myTicTacToe</h1>
+                <div class="my-4">
+                    <p id="gameInfo" class="text-lg font-medium inline">Turn for X</p>
+                    <button
+                        class="bg-white hover:bg-gray-100 text-gray-800 font-semibold text-2xlsfont-sans px-4 border border-gray-400 rounded shadow ml-4"
+                        type="reset">Reset</button>
+                </div>
+                <img id="excited-img" class="w-0" src="/excited.gif" alt="exicited dance" width="150">
+            </div>
+        </div>
+    </div>
+    <!-- Personal Script Link! ... -->
+    <script src="script.js"> </script>
+</body>
+
+</html>
