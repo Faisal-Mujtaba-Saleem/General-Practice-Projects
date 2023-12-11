@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JavaScript Form Validation</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Form</h1>
+        <form aciton="http://127.0.0.1:1100/" method='post' name="myForm" onsubmit="return validateForm()"
+            method="post">
+            <hr>
+            <div class="formdesign" id="fname">
+                Name:
+                <br> <input type="text" name="name" required><b><span class="formerror"> </span></b>
+            </div>
+            <hr>
+            <div class="formdesign" id="femail">
+                Email:
+                <br> <input type="email" name="email" required><b><span class="formerror"> </span></b>
+            </div>
+            <hr>
+            <div class="formdesign" id="fphone">
+                Phone:
+                <br> <input type="phone" name="phone" required><b><span class="formerror"></span></b>
+            </div>
+            <hr>
+            <div class="formdesign" id="fpass">
+                Password:
+                <br> <input type="password" name="password" required><b><span class="formerror"></span></b>
+            </div>
+            <hr>
+            <div class="formdesign" id="fcpass">
+                Confirm Password:
+                <br> <input type="password" name="cpass" required><b><span class="formerror"></span></b>
+            </div>
+            <hr>
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Script Src...  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

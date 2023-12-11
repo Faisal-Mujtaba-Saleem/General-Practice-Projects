@@ -1,0 +1,23 @@
+{
+  "name": "html-form-validation-and-submission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faisal-Mujtaba-Saleem/General-Practice-Projects/blob/main/HTML%20Form%20Validation%20and%20Submission"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "mongodb": "^6.2.0",
+    "query-string": "^8.1.0"
+  }
+}
